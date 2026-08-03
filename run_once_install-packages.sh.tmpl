@@ -1,0 +1,4 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+sudo pacman -S --needed niri kitty
+{{ end -}}
