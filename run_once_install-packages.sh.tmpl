@@ -1,4 +1,9 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
-sudo pacman -S --needed kitty
+sudo pacman -S --needed \
+    kitty \
+    chromium \
+    zed \
+    lsd \
+    loupe
 {{ end -}}
