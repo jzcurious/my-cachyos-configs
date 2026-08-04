@@ -1,0 +1,18 @@
+#!/bin/bash
+
+THEME_NAME="sddm-theme"
+SOURCE_THEME="{{ .chezmoi.sourceDir }}/sddm-theme"
+TARGET_THEME_DIR="/usr/share/sddm/themes/$THEME_NAME"
+CONF_DIR="/etc/sddm.conf.d"
+CONF_FILE="$CONF_DIR/theme.conf.user"
+
+if [ ! -d "$TARGET_THEME_DIR" ]; then
+    sudo mkdir -p "$TARGET_THEME_DIR"
+    sudo cp -r "$SOURCE_THEME"/* "$TARGET_THEME_DIR"
+fi
+
+sudo mkdir -p "$CONF_DIR"
+sudo bash -c "cat > $CONF_FILE <<EOF
+[Theme]
+Current=$THEME_NAME
+EOF"
