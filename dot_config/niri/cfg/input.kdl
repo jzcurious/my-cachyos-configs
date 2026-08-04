@@ -26,9 +26,9 @@ input {
     workspace-auto-back-and-forth // Enable workspace back & forth switching
 
     touchpad {
-        natural-scroll
         tap
         dwt
+        natural-scroll
         accel-speed 0.2
         accel-profile "adaptive"
     }
