@@ -5,9 +5,9 @@ THEME_REPO="https://github.com/jzcurious/sddm-theme.git"
 TARGET_DIR="/usr/share/sddm/themes/$THEME_NAME"
 
 
-# if command -v pacman > /dev/null; then
-#     sudo pacman -S --needed --noconfirm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg git
-# fi
+if command -v pacman > /dev/null; then
+     sudo pacman -S --needed --noconfirm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg git
+fi
 
 if [ ! -d "$TARGET_DIR" ]; then
     sudo git clone "$THEME_REPO" "$TARGET_DIR"
