@@ -6,7 +6,7 @@ TARGET_DIR="/usr/share/sddm/themes/$THEME_NAME"
 
 
 if command -v pacman > /dev/null; then
-     sudo pacman -S --needed --noconfirm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg git
+     sudo pacman -S --needed --noconfirm qt5-graphicaleffects qt5-quickcontrols2 qt5-svg qt6-5compat
 fi
 
 if [ ! -d "$TARGET_DIR" ]; then
