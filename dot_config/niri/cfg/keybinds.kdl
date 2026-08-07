@@ -15,11 +15,16 @@ binds {
     Mod+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     Mod+Shift+Q                         hotkey-overlay-title="Session Menu: noctalia sessionMenu" { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle"; }
     Mod+Z                               hotkey-overlay-title="Open Editor: Zed" { spawn "zeditor"; }
+    Mod+Shift+E                         hotkey-overlay-title="File Manager: Superfile" { spawn "kitty" "spf"; }
+    Mod+E                               hotkey-overlay-title="File Manager: Nautilus" { spawn "nautilus"; }
+	// Mod+P    							{ spawn "wayscriber" "--daemon-toggle"; }
+	Mod+S                               { spawn "kitty" "btop"; }
+	Mod+R                               { spawn "swayimg" "--gallery" "/home/void/Pictures/.rem"; }
 
-    // Please choose your own file manager.
-    Mod+E                               hotkey-overlay-title="File Manager: Superfile" { spawn "kitty" "spf"; }
+    // ─── Noctalia Shell ───
+    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "togglePanel"; }
+	Mod+Shift+B { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "bar" "toggle"; }
 
-	Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "togglePanel"; }
 
     // ─── Media Controls ───
     XF86AudioRaiseVolume                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
