@@ -1,6 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 sudo pacman -S --needed \
+    greetd noctalia-greeter \
     kitty \
     chromium \
     zed \
