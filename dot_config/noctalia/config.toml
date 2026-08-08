@@ -147,10 +147,10 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+    path = "~/Pictures/Wallpapers/box.jpg"
 
     [wallpaper.last]
-    path = "/usr/share/noctalia/assets/noctalia-wallpaper.png"
+    path = "~/Pictures/Wallpapers/box.jpg"
 
 [widget.clock]
 format = "{:%H:%M %a, %b %d}"
