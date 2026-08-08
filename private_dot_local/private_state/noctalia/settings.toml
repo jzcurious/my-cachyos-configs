@@ -94,21 +94,26 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
 
 [notification]
 border = false
-position = "top_center"
+position = "top_right"
 
 [osd]
 offset_x = 16
-position = "top_left"
+position = "top_right"
+
+[plugin_settings."yuuto/arch-updater"]
+aur_helper = "off"
+auto_check_hours = 1
+flatpak_enabled = false
 
 [plugins]
 enabled = [
     "noctalia/notes",
     "cleboost/zed-provider",
     "yocraft/web-launcher",
-    "yuuto/arch-updater",
     "tadomika_ari/config-swap",
     "kenn/keybind-cheatsheet",
-    "thepunkoff/pomodoro"
+    "thepunkoff/pomodoro",
+    "yuuto/arch-updater"
 ]
 
 [shell]
@@ -117,6 +122,10 @@ card_borders = false
 corner_radius_scale = 0.70000001043081284
 font_family = "Hasklug Nerd Font"
 lang = "en"
+polkit_agent = true
+
+    [shell.greeter_sync]
+    auto_sync = true
 
     [shell.launcher]
     provider_prefix = ">"
