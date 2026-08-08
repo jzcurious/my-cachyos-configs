@@ -124,9 +124,6 @@ font_family = "Hasklug Nerd Font"
 lang = "en"
 polkit_agent = true
 
-    [shell.greeter_sync]
-    auto_sync = true
-
     [shell.launcher]
     provider_prefix = ">"
 
@@ -144,11 +141,15 @@ polkit_agent = true
     open_near_click_clipboard = true
     open_near_click_control_center = true
     open_near_click_wallpaper = true
-    polkit_placement = "attached"
+    polkit_placement = "floating"
+    session_position = "center"
     transparency_mode = "glass"
 
     [shell.screenshot]
     remember_last_region = true
+
+    [shell.session]
+    grid_columns = 2
 
 [theme]
 builtin = "Ayu"
@@ -158,13 +159,13 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_on_startup = true
 
     [wallpaper.default]
-    path = "/home/void/Pictures/Wallpapers/candylove3d-1758795308.webp"
+    path = "/home/void/Pictures/Wallpapers/schmitz_ghost_model_by_caelryn_by_virt_a_mate_dlzgce0.jpg"
 
     [wallpaper.last]
-    path = "/home/void/Pictures/Wallpapers/candylove3d-1758795308.webp"
+    path = "/home/void/Pictures/Wallpapers/schmitz_ghost_model_by_caelryn_by_virt_a_mate_dlzgce0.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/void/Pictures/Wallpapers/candylove3d-1758795308.webp"
+    path = "/home/void/Pictures/Wallpapers/schmitz_ghost_model_by_caelryn_by_virt_a_mate_dlzgce0.jpg"
 
 [widget.clock]
 format = "{:%H:%M %a, %b %d}"

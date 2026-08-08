@@ -6,6 +6,7 @@ binds {
     // ─── noctalia-shell keybinds ───
     // https://docs.noctalia.dev/getting-started/keybinds/
 
+
     Mod+Shift+ESCAPE                     { show-hotkey-overlay; }
 
     // ─── Applications ───
@@ -23,8 +24,9 @@ binds {
 	// Mod+P    							{ spawn "wayscriber" "--daemon-toggle"; }
 
     // ─── Noctalia Shell ───
-    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "togglePanel"; }
-	Mod+Shift+B { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "bar" "toggle"; }
+	Mod+Shift+B                         { spawn-sh "noctalia msg bar-toggle"; }
+	Mod+ALT+Left                        { spawn-sh "noctalia msg wallpaper-previous"; }
+	Mod+ALT+Right                       { spawn-sh "noctalia msg wallpaper-next"; }
 
 
     // ─── Media Controls ───
